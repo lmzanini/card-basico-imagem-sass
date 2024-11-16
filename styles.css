@@ -1,0 +1,62 @@
+body, html, h1 {
+  margin: 0;
+  padding: 0;
+  text-align: -webkit-center;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+p, span {
+  font-weight: 500;
+}
+
+.container {
+  margin-top: 3rem;
+  background-image: url("https://i.imgur.com/G8fn9U1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 600px;
+  border-radius: 2rem;
+  align-content: center;
+}
+
+.card {
+  margin: 1rem;
+  width: 80%;
+  overflow: hidden;
+  position: relative;
+  backdrop-filter: blur(1px) saturate(75%);
+  -webkit-backdrop-filter: blur(1px) saturate(75%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.card-title {
+  margin-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+  color: #e98528;
+}
+
+.card-body {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 0.5rem;
+}
+.card-body img {
+  border-radius: 1rem;
+  width: 90%;
+  height: 90%;
+}
+
+.card-footer {
+  padding: 0.5rem;
+  color: #e98528;
+}
+
+/*# sourceMappingURL=styles.css.map */

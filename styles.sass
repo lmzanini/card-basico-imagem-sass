@@ -1,0 +1,57 @@
+$icon-url: url('./assets/img/cat-paw.jpg')
+$icon-size: 30px
+$border: 1px solid rgba(255, 255, 255, 0.125)
+$p-color: #e98528
+
+body, html, h1
+    margin: 0
+    padding: 0
+    text-align: -webkit-center
+    font-family: 'Roboto'
+    font-weight: 400
+
+h1, h2, h3
+    font-weight: 700
+
+p, span
+    font-weight: 500
+
+.container
+    margin-top: 3rem
+    background-image: url('https://i.imgur.com/G8fn9U1.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    width: 600px
+    border-radius: 2rem
+    align-content: center
+
+.card
+    margin: 1rem
+    width: 80%
+    overflow: hidden
+    position: relative
+    backdrop-filter: blur(1px) saturate(75%)
+    -webkit-backdrop-filter: blur(1px) saturate(75%)
+    background-color: rgba(17, 25, 40, 0.75)
+    border-radius: 12px
+    border: $border
+
+.card-title
+    margin-top: .5rem
+    padding-bottom: .5rem
+    border-bottom: $border
+
+    color: $p-color
+
+.card-body
+    border-bottom: $border
+    padding: .5rem
+    img
+        border-radius: 1rem
+        width: 90%
+        height: 90%
+
+.card-footer
+    padding: .5rem
+    color: $p-color

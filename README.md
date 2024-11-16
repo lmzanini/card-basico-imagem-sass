@@ -4,7 +4,7 @@
 [![Sass](https://img.shields.io/badge/Sass-1.50.0-CC6699.svg)](https://sass-lang.com/)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=&logo=html5&logoColor=white)
 
-<img src="https://i.imgur.com/kewiyjJ.png" alt="Yumi">
+<img src="https://i.imgur.com/NjAqIkj.gif" alt="Yumi">
 
 Este projeto utiliza <b style="color: #e98528">Sass</b> para estilização.
 Para executar este projeto, você precisará ter o <b style="color: #e98528">Node.js</b> e o <b style="color: #e98528">Sass</b> instalados em sua máquina.

@@ -2,7 +2,7 @@
 
 [![Node.js](https://img.shields.io/badge/Node.js-16.x-339933.svg)](https://nodejs.org/) 
 [![Sass](https://img.shields.io/badge/Sass-1.50.0-CC6699.svg)](https://sass-lang.com/)
-[![Sass](https://img.shields.io/badge/HTML.svg)]
+[![Html](https://img.shields.io/badge/html.svg)]
 
 Este projeto utiliza **Sass** para estilização.
 Para executar este projeto, você precisará ter o **Node.js** e o **Sass** instalados em sua máquina.

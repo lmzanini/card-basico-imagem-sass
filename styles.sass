@@ -1,57 +1,118 @@
-$icon-url: url('./assets/img/cat-paw.jpg')
-$icon-size: 30px
-$border: 1px solid rgba(255, 255, 255, 0.125)
-$p-color: #e98528
+// Variáveis para facilitar manutenção e personalização
+$border: 1px solid rgba(255, 255, 255, 0.125) // Cor e opacidade da borda
+$p-color: #e98528 // Cor principal (laranja)
+$height-card: 320px // Altura padrão do card
+$width-card: 240px // Largura padrão do card
+$blur-filter: blur(1px) saturate(75%) // Filtro de desfoque e saturação para elementos
+$card-bg-color: rgba(17, 25, 40, 0.75) // Cor de fundo do card
+$badge-bg-color: rgba(17, 25, 40, 1) // Cor de fundo da badge
 
-body, html, h1
-    margin: 0
-    padding: 0
-    text-align: -webkit-center
-    font-family: 'Roboto'
-    font-weight: 400
+// Estilo global
+html
+  margin: 0
+  padding: 0
+  text-align: -webkit-center
+  font-family: 'Roboto'
+  font-weight: 400
+  background-image: url('https://i.imgur.com/G8fn9U1.jpg')
 
 h1, h2, h3
-    font-weight: 700
+  font-weight: 700 // Títulos com peso mais forte
 
 p, span
-    font-weight: 500
+  font-weight: 500 // Texto de parágrafos e spans com peso médio
 
+// Container geral
 .container
-    margin-top: 3rem
-    background-image: url('https://i.imgur.com/G8fn9U1.jpg')
-    background-repeat: no-repeat
-    background-size: cover
-    background-position: center
-    width: 600px
-    border-radius: 2rem
-    align-content: center
+  margin-top: 3rem
+  width: 600px
+  border-radius: 2rem
+  align-content: center
 
+// Estilo do card
 .card
-    margin: 1rem
-    width: 80%
-    overflow: hidden
-    position: relative
-    backdrop-filter: blur(1px) saturate(75%)
-    -webkit-backdrop-filter: blur(1px) saturate(75%)
-    background-color: rgba(17, 25, 40, 0.75)
-    border-radius: 12px
-    border: $border
+  margin: 1rem
+  width: $width-card
+  height: $height-card
+  overflow: hidden
+  position: relative
+  backdrop-filter: $blur-filter
+  -webkit-backdrop-filter: $blur-filter
+  background-color: $card-bg-color
+  border-radius: 12px
+  border: $border
+  transition: height 0.3s ease // Transição suave ao passar o mouse
 
+  // Efeito hover para aumentar a altura do card
+  &:hover
+    height: calc($height-card + 20px)
+
+// Estilo da badge
+.badge
+  position: absolute
+  top: 0
+  left: 50%
+  transform: translateX(-50%)
+  backdrop-filter: $blur-filter
+  -webkit-backdrop-filter: $blur-filter
+  background-color: $badge-bg-color
+  color: $p-color
+  padding: 0.3rem 0.6rem
+  font-size: 0.8rem
+  font-weight: 700
+  border-radius: 1rem
+  z-index: 10
+  text-transform: uppercase
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
+  width: 100%
+
+  // Adicionando um pseudo-elemento para o "efeito de cauda" da badge
+  &::after
+    content: ""
+    position: absolute
+    bottom: -10px
+    left: 0
+    width: 100%
+    height: 20px
+    background-color: $badge-bg-color
+    border-radius: 0 0 50% 50%
+    z-index: -1
+
+// Efeito de transição ao passar o mouse no container
+.container-transition
+  transition: transform 0.3s ease
+
+  // Efeito de elevação no hover
+  &:hover
+    transform: translateY(20px)
+    height: calc(100% + 20px)
+
+// Estilo do título do card
 .card-title
-    margin-top: .5rem
-    padding-bottom: .5rem
-    border-bottom: $border
+  h1
+    margin: 0
+    padding: 0
 
-    color: $p-color
+  margin-top: 0.5rem
+  padding-bottom: 0.5rem
+  border-bottom: $border
+  color: $p-color
 
+// Estilo do corpo do card
 .card-body
-    border-bottom: $border
-    padding: .5rem
-    img
-        border-radius: 1rem
-        width: 90%
-        height: 90%
+  border-bottom: $border
+  padding: 0.5rem
 
+  // Imagens dentro do card
+  img
+    border-radius: 1rem
+    width: 100%
+    height: 100%
+
+// Estilo do rodapé do card
 .card-footer
-    padding: .5rem
-    color: $p-color
+  padding: 0.5rem
+  color: $p-color
+
+  p
+    margin: 0

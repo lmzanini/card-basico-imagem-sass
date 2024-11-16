@@ -1,4 +1,4 @@
-<h1 style="color: #e98528">Card básico com foto usando HTML e SASS</h1>
+<h1 style="color: #e98528">Card básico com foto  e animação usando HTML e SASS</h1>
 
 [![Node.js](https://img.shields.io/badge/Node.js-16.x-339933.svg)](https://nodejs.org/) 
 [![Sass](https://img.shields.io/badge/Sass-1.50.0-CC6699.svg)](https://sass-lang.com/)
